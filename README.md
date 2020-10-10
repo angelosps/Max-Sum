@@ -142,9 +142,9 @@ $
 
 ```
 
-There is also another feature included in the last two methods (Recursive with memoization (top-down dp) and Iterative with dynamic programming (bottom-up dp)) which finds and prints the path where the maximum sum occurs in the grid. It can be used by compiling using "gcc -DPATH ...".
+There is also another feature included in the last two methods (Recursive with memoization and Iterative with dynamic programming) which finds and prints the path where the maximum sum occurs in the grid. This feature can be used by compiling using "gcc -DPATH ...".
 
-Here is an example using the two methods for finding the max sum and the path where the max sum occurs in the grid:
+Here is an example using the two methods for finding the maximum sum in the grid and the path which was followed for finding the maximum sum:
 
 ``` bash
 
