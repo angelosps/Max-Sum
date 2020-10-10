@@ -3,7 +3,7 @@
  Project 3 for the course "Introduction to Programming" in Semester 1.  
 A project about finding the maximum sum in a grid with flipped sides starting from the first block of the grid (up and left - position (0,0)) to the last block (down and right - position (n,m)) 
 
-The above image shows how you can move inside the grid.
+The image below shows how you can move inside the grid.
 
 <img src = "screenshots/1.png"> 
 
@@ -109,9 +109,9 @@ $
 
 ```
 
-It is also included a program that generates random matrices (grids) for testing the project.  
+It is included a program that generates random matrices (grids) for testing the project.  
 
-randmatr_&lt;arch>, whereas &lt;arch> it is "linux", "windows.exe" or "maxosx".
+randmatr_&lt;arch> , whereas &lt;arch> it is "linux", "windows.exe" or "maxosx".
 
 * randmatr_&lt;arch>: Generates a random matrix with 10 rows and 10 columns, with values from 0 to 99 and seed for random number generator the current time.
 
@@ -122,3 +122,51 @@ randmatr_&lt;arch>, whereas &lt;arch> it is "linux", "windows.exe" or "maxosx".
 * randmatr_&lt;arch> &lt;N> &lt;M> &lt;Maxvalue>: Generates a random matrix with &lt;N> rows and &lt;M> columns with values from 0 to &lt;Maxvalue>-1 and seed for random number generator the current time.
  
 * randmatr_&lt;arch> &lt;N> &lt;M> &lt;Maxvalue>: Generates a random matrix with &lt;N> rows and &lt;M> columns with values from 0 to &lt;Maxvalue>-1 and seed for random number generator the &lt;Seed>.
+
+An example of using the randmatr_linux using the three methods:
+
+```bash
+
+$ ./randmatr_linux 12 16 200 134 | ./maxsumrec 
+Running maxsumrec
+Max sum is 1896
+$
+$ ./randmatr_linux 20 22 10 1 | ./maxsummem
+Running maxsummem
+Max sum is 163
+$
+$ ./randmatr_linux 10000 10000 100 999 | ./maxsumdp 
+Running maxsumdp
+Max sum is 815519
+$
+
+```
+
+There is also another feature included in the last two methods (Recursive with memoization (top-down dp) and Iterative with dynamic programming (bottom-up dp)) which finds and prints the path where the maximum sum occurs in the grid. It can be used by compiling using "gcc -DPATH ...".
+
+Here is an example using the two methods for finding the max sum and the path where the max sum occurs in the grid:
+
+``` bash
+
+$ gcc -DPATH -o maxsummempath maxsum.c maxsummem.c
+$ gcc -DPATH -o maxsumdppath maxsum.c maxsumdp.c 
+$
+$ ./maxsummempath
+6 5
+7 4 5 2 7 
+6 9 1 6 3 
+9 2 7 9 8 
+8 8 1 7 2 
+2 3 1 8 4 
+4 6 5 4 6
+Running maxsummem 
+Max sum is 44
+7 -> 9 -> 7 -> 7 -> 8 -> 6
+$
+$ ./maxsumdppath < input.txt
+Running maxsumdp
+Max sum is 1146
+78 -> 96 -> 72 -> 72 -> 71 -> 93 -> 83 -> 92 -> 82 -> 96 
+$
+```
+
