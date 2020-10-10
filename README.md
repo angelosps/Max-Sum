@@ -108,3 +108,17 @@ Max sum is 1146
 $
 
 ```
+
+It is also included a program that generates random matrices (grids) for testing the project.  
+
+randmatr_&lt;arch>, whereas &lt;arch> it is "linux", "windows.exe" or "maxosx".
+
+* randmatr_&lt;arch>: Generates a random matrix with 10 rows and 10 columns, with values from 0 to 99 and seed for random number generator the current time.
+
+* randmatr_&lt;arch> &lt;N>: Generates a random matrix with &lt;N> rows and 10 columns with values from 0 to 99 and seed for random number generator the current time.
+ 
+* randmatr_&lt;arch> &lt;N> &lt;M>: Generates a random matrix with &lt;N> rows and &lt;M> columns with values from 0 to 99 and seed for random number generator the current time.
+ 
+* randmatr_&lt;arch> &lt;N> &lt;M> &lt;Maxvalue>: Generates a random matrix with &lt;N> rows and &lt;M> columns with values from 0 to &lt;Maxvalue>-1 and seed for random number generator the current time.
+ 
+* randmatr_&lt;arch> &lt;N> &lt;M> &lt;Maxvalue>: Generates a random matrix with &lt;N> rows and &lt;M> columns with values from 0 to &lt;Maxvalue>-1 and seed for random number generator the &lt;Seed>.
