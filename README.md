@@ -170,3 +170,4 @@ Max sum is 1146
 $
 ```
 
+It is included the statement of the project in Greek, which describes the project more analytically.
