@@ -17,7 +17,7 @@ Here is an example of finding the maximum sum for the 2 grids below.
 
 <img src = "screenshots/2.png">  <img src = "screenshots/3.png"> 
 
-Using the recursive method (maxsumrec.c):
+Using the recursive method:
 
 ``` bash
 
