@@ -111,7 +111,7 @@ $
 
 It is included a program that generates random matrices (grids) for testing the project.  
 
-randmatr_&lt;arch> , whereas &lt;arch> it is "linux", "windows.exe" or "maxosx".
+randmatr_&lt;arch> , whereas &lt;arch> it is "linux", "windows.exe" or "macos".
 
 * randmatr_&lt;arch>: Generates a random matrix with 10 rows and 10 columns, with values from 0 to 99 and seed for random number generator the current time.
 
