@@ -5,5 +5,5 @@ $ make maxsumrec
 $ make maxsummem
 $ make maxsumdp
 
-make clean
+$ make clean
 ```
