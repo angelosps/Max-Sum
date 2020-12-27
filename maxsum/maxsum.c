@@ -4,7 +4,7 @@
 #include "maxsummem.h"
 #include "maxsumdp.h"
 
-int main( void ) {
+int main(void) {
     int n,m;     
     scanf("%d %d", &n, &m);
 
@@ -12,7 +12,6 @@ int main( void ) {
     arr = (int **) malloc((n+1)*sizeof(int *));
     for(int i=0;i<=n;i++)
 	    arr[i] = (int *) malloc((m+1)*sizeof(int));
-
 
     for(int i=1; i<=n; i++)
         for(int j=1; j<=m; j++)
