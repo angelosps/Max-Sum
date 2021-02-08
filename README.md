@@ -1,6 +1,6 @@
 # Max-Sum
 
- Project 3 for the course "Introduction to Programming" in Semester 1.  
+Project 3 for the course "Introduction to Programming" in Semester 1 @ University of Athens.  
 A project about finding the maximum sum in a grid with flipped sides starting from the first block of the grid (up and left - position (0,0)) to the last block (down and right - position (n,m)) 
 
 The image below shows how you can move inside the grid.
