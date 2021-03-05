@@ -169,5 +169,16 @@ Max sum is 1146
 78 -> 96 -> 72 -> 72 -> 71 -> 93 -> 83 -> 92 -> 82 -> 96 
 $
 ```
+### Usage:
+
+In directory _maxsum/_ do the following:
+
+``` bash
+$ make maxsumrec  # Method: Recursion
+$ make maxsummem  # Method: Recursion with memoization (top-down dp)
+$ make maxsumdp   # Method: Iteration with dp (bottom-up dp)
+
+$ make clean
+```
 
 It is included the statement of the project in Greek, which describes the project more analytically.
